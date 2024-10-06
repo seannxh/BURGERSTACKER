@@ -24,12 +24,12 @@ export const availableIngredients = [
 const App = () => {
   const [stack, setStack] = useState([]);
 
-  // Function to add an ingredient to the stack
+
   const addToBurger = (ingredient) => {
     setStack([...stack, ingredient]);
   };
 
-  // Function to remove an ingredient from the stack
+
   const removeFromBurger = (indexToRemove) => {
     const newStack = stack.filter((_, index) => index !== indexToRemove);
     setStack(newStack);
